@@ -12,14 +12,14 @@ function App() {
     <div className="App">
       <Navigation/>
       <Switch>
-      {/* <Route path='/' component={Userlist}
-      /> */}
-      <Route path='/' component={UserListAxios}
-      />
-      <Route exact path='/Profil/:id' render={(props)=><Profil {...props} />
-      }
-      />
-
+        {/* <Route path='/' component={UserList}
+       /> */}
+        <Route exact path="/" component={UserListAxios} />
+        <Route
+          exact
+          path="/profil/:id"
+          render={(props) => <Profil {...props} />}
+        />
       </Switch>
       
     </div>
