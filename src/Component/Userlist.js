@@ -24,10 +24,10 @@ if (loading) {
 }
     return (
         <div
-        style={{ display="flex", flexWrap="wrap", justifyContent="center"}}
+        style={{ display : "flex", flexWrap:"wrap", justifyContent:"center"}}
         >
             {
-                users.map((user)=><Usercard user={user} />
+                users.map((user,i)=><Usercard key={i}user={user} />
 
                 )
             }

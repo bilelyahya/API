@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Spinner } from 'react-bootstrap'
 import Usercard from './Usercard'
 
 const UserListAxios = () => {
@@ -13,7 +14,7 @@ const [isloading, setIsLoading] = useState(true)
     //     )
 const fetchUsers=async ()=>{
     try {
-        const res=await axios.get("https://jsonplaceholder.typicode.com/users")
+        const res=await axios.get("https://jsonplaceholder.typicode.com/users");
         setUsers(res.data);
         setIsLoading(false);
     
@@ -29,17 +30,17 @@ fetchUsers();
       
       }
     return (
-        <div>
+    
              <div
-        style={{ display="flex", flexWrap="wrap", justifyContent="center"}}
+        style={{ display:"flex", flexWrap:"wrap", justifyContent:"center"}}
         >
             {
-                users.map((user)=><Usercard user={user} />
+                users.map((user,i)=><Usercard key={i} user={user} />
 
                 )
             }
         </div>
-        </div>
+ 
     )
 }
 

@@ -1,18 +1,17 @@
-import React from 'react'
-import {Navbar } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-const Navigation = () => {
-    return (
-        <div>
-            <Navbar expand="lg" variant="light" bg="light">
-  
-    <Navbar.Brand href="#">
-        <Link to="/">Home</Link>
-    </Navbar.Brand>
-  
-</Navbar>
-        </div>
-    )
-}
+import React from "react";
+import { Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-export default Navigation
+const Navigation = () => {
+  return (
+    <div>
+      <Navbar expand="lg" variant="light" bg="light">
+        
+          <Link to="/">Home</Link>
+       
+      </Navbar>
+    </div>
+  );
+};
+
+export default Navigation;

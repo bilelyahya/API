@@ -2,9 +2,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './Component/Navigation';
 import Usercard from './Component/Usercard';
-import { Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Userlist from './Component/Userlist';
 import UserListAxios from './Component/UserListAxios';
+import Profil from './Component/Profil';
 
 function App() {
   return (
